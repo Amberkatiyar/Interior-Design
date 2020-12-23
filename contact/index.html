@@ -1,0 +1,85 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us ( Xypo )</title>
+<!--link-stylesheet----------->
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<!--using-fontAwesome------------>
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+          <img src="logo.png" class="logo">
+           <nav id="sideNav">
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../live/index.html">LIVING ROOM</a></li>
+            <li><a href="../din/index.html">DINING ROOM</a></li>
+            <li><a href="../bedroom/index.html">BEDROOM</a></li>
+             <li><a href="../kitchen/index.html">MODULAR KITCHEN</a></li>
+            <li><a href="../ls/index.html">LOGIN / SIGNUP</a></li>
+        </ul>
+    </nav>
+            <img src="menu.png" id="menuBtn">
+<!--contact-form-container------------------->
+	<section id="contact">
+	<!--socail----------->
+	<div class="social">
+	<!--icons--------->
+	<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+	<a href="https://twitter.com/login?lang=en"><i class="fab fa-twitter"></i></a>
+	<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+	<a href="https://www.google.com/search?rlz=1C1CHBF_enIN879IN879&sxsrf=ALeKk03zWqIXDz6r7jFPFkWOMNauBAKbcg%3A1606038648378&ei=eDS6X4nWFvrD3LUP4MWG-AI&q=github&oq=github&gs_lcp=CgZwc3ktYWIQAzIHCCMQyQMQJzIECCMQJzIECCMQJzIHCAAQsQMQQzIECAAQQzIFCAAQsQMyBwgAELEDEEMyBAgAEEMyAggAMgQIABBDOgQIABBHOgsIABCxAxCDARCRAjoICAAQsQMQgwE6BwgjEOoCECc6DQgAELEDEIMBEMkDEEM6CggAELEDEIMBEEM6BwgAEMkDEEM6BwguELEDEEM6BAguEEM6AgguOgUILhCxA1DjOlj8S2DDTWgBcAJ4BIABpwKIAeoRkgEFMC4zLjeYAQCgAQGqAQdnd3Mtd2l6sAEKyAEIwAEB&sclient=psy-ab&ved=0ahUKEwiJ8oaZ8JXtAhX6IbcAHeCiAS8Q4dUDCA0&uact=5"><i class="fab fa-github"></i></a>
+	<a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome"><i class="fab fa-snapchat"></i></a>
+		
+	</div>
+	<!--contact-box------------->
+	<div class="contact-box">
+	<!--heading---------->
+	<div class="c-heading">
+	<h1>Get In Touch</h1>
+	<p>Ask Your Queries</p>
+	</div>
+	<!--inputs------------------>
+	<div class="c-inputs">
+	<form>
+	<input type="text" placeholder="Full Name"/>	
+	<input type="email" placeholder="Example@gmail.com"/>
+	<textarea name="message" placeholder="Write Message"></textarea>
+	<!--sumbit-btn----------->
+	<button>SEND</button>
+	</form>
+	</div>
+		
+	</div>
+	<!--map------------------->
+	<div class="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14171.339603254695!2d79.58239658471885!3d27.380871085109337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399e303697d81e83%3A0x7a0dbe8e567cbf24!2sFarrukhabad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1601453619244!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+	</section>
+    </header>
+          <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+        }
+        
+        var scroll = new SmoothScroll('a[href*="#"]',{
+            speed: 1000,
+            speedAsDuration: true
+        });
+
+        
+        
+    </script>
+</body>
+</html>
